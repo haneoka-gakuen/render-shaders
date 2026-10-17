@@ -1,0 +1,41 @@
+{
+  "name": "@haneoka/render-shaders",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Portable spatial rendering kernels and optional backend adapters.",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./three": {
+      "types": "./src/three.d.ts",
+      "import": "./src/three.js"
+    },
+    "./flutter": {
+      "import": "./src/flutter.js"
+    }
+  },
+  "files": [
+    "src",
+    "LICENSE-FidelityFX-FSR.txt",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "three": ">=0.184.0 <0.185.0"
+  },
+  "peerDependenciesMeta": {
+    "three": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneoka-gakuen/render-shaders.git"
+  },
+  "homepage": "https://github.com/haneoka-gakuen/render-shaders#readme",
+  "bugs": {
+    "url": "https://github.com/haneoka-gakuen/render-shaders/issues"
+  }
+}
